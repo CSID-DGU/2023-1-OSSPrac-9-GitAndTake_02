@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, session, redirect
 
 app=Flask(__name__)
-app.secret_key = 'my_secret_key'
 dataLIst = []
 
 #mian page
@@ -45,6 +44,5 @@ def result():
         dataLIst = sorted(dataLIst, key=lambda x: x.get('Student Number', '').lower())
     return render_template('result.html', result=dataLIst)
 
-print('ex1.py is set to {}'.format(__name__))
 if __name__ =='__main__':
     app.run(debug=True)
