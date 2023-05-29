@@ -1,0 +1,9 @@
+version: "2.0"
+
+services:
+  teamproject5:
+    build: .
+    image: ckdgus9088/teamproject5:3.0 
+    ports: 
+      - "80:80"
+    
