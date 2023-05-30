@@ -3,6 +3,7 @@ version: "2.0"
 services:
   teamproject6:
     build: .
+    image: teamproject6
     ports: 
       - "80:80"
     
